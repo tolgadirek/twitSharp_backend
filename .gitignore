@@ -1,0 +1,37 @@
+
+# BUILD OUTPUT
+bin/
+obj/
+
+
+# VISUAL STUDIO
+.vs/
+*.user
+*.suo
+*.userosscache
+
+
+# ENVIRONMENT / SECRETS
+.env
+appsettings.Development.json
+appsettings.Local.json
+
+
+# ENTITY FRAMEWORK
+**/Migrations/*Designer.cs
+
+
+# LOGS
+*.log
+logs/
+LogFiles/
+
+
+# OS FILES
+.DS_Store
+Thumbs.db
+
+
+# PUBLISH FOLDERS
+publish/
+out/
