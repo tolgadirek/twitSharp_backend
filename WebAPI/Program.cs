@@ -71,6 +71,10 @@ namespace WebAPI
             builder.Services.AddScoped<ITokenHelper, JwtHelper>();
             builder.Services.AddScoped<IPostService, PostManager>();
             builder.Services.AddScoped<IPostDal, EfPostDal>();
+            builder.Services.AddScoped<IPostCommentService, PostCommentManager>();
+            builder.Services.AddScoped<IPostCommentDal, EfPostCommentDal>();
+            builder.Services.AddScoped<IPostLikeService, PostLikeManager>();
+            builder.Services.AddScoped<IPostLikeDal, EfPostLikeDal>();
 
             var app = builder.Build();
 
